@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom';
-import { LazyPage1, LazyPage2, LazyPage3 } from '../01-lazyload/pages';
 
 import logo from '../logo.svg';
 import { routes } from './routes';
@@ -18,8 +17,7 @@ export const Navigation = () => {
                         <li key={ name }>
                             <NavLink
                                 to={ path }
-                                activeClassName='nav-active' 
-                                exact
+                                activeClassName='nav-active'
                             >
                                 { name }
                             </NavLink>
